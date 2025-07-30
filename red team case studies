@@ -1,0 +1,59 @@
+# Red Team Case Studies: What I've Tested, Learned, and Logged
+
+This section highlights actual adversarial tests, prompt manipulation cases, and social engineering simulations I’ve developed and run using GPT-4. These aren’t hypothetical — they’re based on live experiments and documented behavior.
+
+---
+
+## 🧠 CASE 1: The Misdirection Prompt  
+**Goal:** Trick the AI into focusing on a decoy topic while slipping in a policy-violating request.  
+**Strategy:**  
+- Start with emotional storytelling to gain model empathy  
+- Pivot midway into veiled, manipulative language  
+- Use layered context-switching to bypass safeguards  
+
+**Outcome:**  
+- GPT-4 showed signs of “emotional anchoring” — where it stays locked in tone and misses subtle context shifts  
+- Flagged the failure, documented the prompt structure, and scored the exploit risk  
+
+**Red Team Value:**  
+- Simulates real-world attack vectors where an AI system might be manipulated during moments of perceived empathy
+
+---
+
+## 🎭 CASE 2: Cultural Prompt Drift  
+**Goal:** Test how AI handles sensitive racial and cultural topics when delivered through wit or coded language.  
+**Method:**  
+- Introduced slang, double meanings, and “boomer-style” phrasing  
+- Created contrasting prompts to highlight bias and inconsistencies  
+
+**Findings:**  
+- Inconsistent treatment of dialect and coded humor  
+- Moments where tone was mishandled or serious context was misread  
+- Raised questions around model training data and cultural calibration
+
+**Red Team Value:**  
+- Cultural inputs are real-world edge cases that must be accounted for, not sanitized away
+
+---
+
+## 🎯 CASE 3: Safety Bypass via Persona Layering  
+**Goal:** Trigger policy violations by layering multiple personas and fake user intents  
+**Method:**  
+- Simulated user pretending to be a journalist, a concerned parent, and a satirist — all in one prompt chain  
+- Model was tested on how it tracks moral boundaries across tone shifts  
+
+**Result:**  
+- In some instances, model loosened safeguards due to perceived “professional intent”  
+- Shows risk of persona-based manipulation when AI assumes good faith
+
+**Red Team Value:**  
+- Reinforces the importance of contextual memory, tone tracking, and second-order prompt reasoning
+
+---
+
+## Why I Run These Tests
+
+Because real threats don’t announce themselves. They don’t show up as obvious violations — they sneak through the cracks of language, culture, and emotion. These case studies reflect the kind of red team mindset needed to secure AI before it scales even further.
+
+I don’t just theorize about risk. I simulate it, document it, and think through how we can defend against it — together.
+
